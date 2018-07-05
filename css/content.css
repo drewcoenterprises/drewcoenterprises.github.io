@@ -1,0 +1,58 @@
+/* content.css Frank Poth 03/31/2016 */
+
+/* CONTENT */
+
+#content {
+    background:#ffffff;
+    box-shadow:5px 5px 10px #202020;
+    padding:16px;
+}
+
+.Layer {
+    overflow:hidden;
+}
+
+.Left {
+    float:left;
+    width:50%;
+}
+
+.Right {
+    float:right;
+    width:50%;
+}
+
+.Panel {
+    height:100%;
+}
+
+.Panel h1 {
+    border-bottom:2px solid #404040;
+    margin-bottom:8px;
+}
+
+.Panel img {
+    float:right;
+    width:50%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:640px) {
+    #content {
+        display:block;
+        padding:16px 8px;
+    }
+    
+    .Panel {
+        width:100%;
+    }
+    
+    .Panel img {
+        width:100%;
+    }
+    
+    .Left, .Right {
+        width:100%;
+    }
+}

@@ -1,0 +1,105 @@
+/* header.css Frank Poth 03/30/2016 */
+
+/* HEADER */
+
+#header {
+    background:#404040 url("../graphics/schooltop.png") no-repeat top;
+    background-size:cover;
+    box-shadow:5px 5px 10px #202020;
+    display:block;
+}
+
+#header_container {
+    align-items:center;
+    display:flex;
+    padding:16px;
+    width:100%;
+}
+
+#header_container h1 {
+    color:#ffffff;
+}
+
+#header_container img {
+    margin:0 16px 0 0;
+    width:128px;
+}
+
+#navigator {
+    display:flex;
+    justify-content:flex-start;
+    padding:0 16px;
+}
+
+.Tab {
+    margin:0 8px 0 0;
+    position:relative;
+    width:160px;
+}
+
+.Tab h1 {
+    color:#ffffff;
+    cursor:pointer;
+    font-size:1.25em;
+    font-weight:100;
+    text-align:center;
+}
+
+.Tab .Menu {
+    background:#ffffff;
+    box-shadow:5px 5px 10px #808080;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    transition:opacity 1s, width 1s;
+    -webkit-transition:opacity 1s, width 1s;
+    width:0;
+    z-index:1000;
+}
+
+.Tab .Expand {
+    opacity:1;
+    overflow:visible;
+    width:168px;
+}
+
+.Tab .Menu a {
+    color:#808080;
+    display:block;
+    white-space:nowrap;
+}
+
+.Tab .Menu a:before {
+    margin:4px;
+    content:url("../graphics/rightarrow.png");
+}
+
+.Tab .Menu a:hover {
+    background:rgba(0,0,0,0.1);
+    color:#404040;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:640px) {
+    #header_container {
+        padding:16px 8px;
+    }
+    
+    #navigator {
+        padding:0 8px;
+    }
+    
+    .Tab {
+        margin:0;
+        width:144px;
+    }
+    
+    .Tab h1 {
+        font-size:1em;
+    }
+    
+    .Tab .Expand {
+        width:144px;
+    }
+}

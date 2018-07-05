@@ -1,0 +1,47 @@
+/* drewco.css Frank Poth 03/30/2016 */
+
+/* This is the base css for the drewco site. */
+
+/* EVERYTHING */
+
+* {
+    border:none;
+    box-sizing:border-box;
+    color:#404040;
+    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+
+a {
+    color:#808080;
+}
+
+a:hover {
+    color:#404040;
+}
+
+html {
+    background:#404040 url('../graphics/background0.png') repeat;
+    overflow-x:hidden;
+}
+
+body {
+    overflow-x:hidden;
+    margin:0 auto;
+    width:90%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:640px) {
+    body {
+        margin:0;
+        width:100%;
+    }
+    
+    h1 {
+        text-align:center;
+    }
+}

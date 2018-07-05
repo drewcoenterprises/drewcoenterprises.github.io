@@ -1,0 +1,58 @@
+/* index.css Frank Poth 03/30/2016 */
+
+/* CSS Just for the index page */
+
+.LinkBox {
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.LinkBox h1 {
+    width:100%;
+}
+
+.LinkBox a {
+    display:block;
+    min-width:240px;
+    padding:4px;
+    text-decoration:none;
+    white-space:nowrap;
+    width:50%;
+}
+
+.LinkBox a:before {
+    content:url("../graphics/rightarrow.png");
+    margin:4px;
+}
+
+.LinkBox a:hover {
+    background:rgba(255,255,255,0.1);
+}
+
+#map {
+    height:320px;
+    margin:2em 0 1em 0;
+    width:320px;
+}
+
+#contact {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+}
+
+#contact p {
+    margin:4px 8px;
+    text-align:center;
+    width:100%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:640px) {
+    .LinkBox a {
+        width:100%;
+    }
+}
