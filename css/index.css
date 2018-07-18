@@ -31,6 +31,9 @@
 }
 
 #map {
+    background-image:url("../graphics/drewco.jpg");
+    background-size:cover;
+    background-position:center 0;
     height:320px;
     margin:2em 0 1em 0;
     width:320px;
